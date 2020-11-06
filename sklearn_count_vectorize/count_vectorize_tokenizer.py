@@ -14,6 +14,7 @@ print(doc_terms_list_train)
 
 tokenize = CountVectorizer().build_tokenizer()
 
+
 def features(document):
     terms = tokenize(document)
     d = {'text_length': len(terms), 'text_spam': whatever_this_means}
